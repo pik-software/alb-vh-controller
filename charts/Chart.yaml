@@ -1,0 +1,9 @@
+apiVersion: v2
+name: alb-vh-controller
+type: application
+version: 1.1.1
+appVersion: "0.0.1"
+description: A helm chart for deploy alb-vh-controller 
+keywords:
+- alb
+- controller
