@@ -4,7 +4,13 @@
 name: alb-vh-controller
 image:
   repository: cr.yandex/crpm5h6tsjpdgvehbfdf/alb-controller
-  tag: "f2ae30f3"
+  tag: "d8ef700e"
+env:
+  name: "test"
+  folder_id: ""
+  subnet_id: ""
+  alb_router_id: ""
+  domain: ""
 resources: 
   limits:
     cpu: 200m
