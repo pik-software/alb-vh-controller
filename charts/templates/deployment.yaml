@@ -21,6 +21,16 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.namespace
+            - name: ENV
+              value: {{ .Values.env.name | quote }}
+            - name: YC_FOLDER_ID
+              value: {{ .Values.env.folder_id | quote }}
+            - name: YC_SUBNET_ID
+              value: {{ .Values.env.subnet_id | quote }}
+            - name: YC_ALB_ROUTER_ID
+              value: {{ .Values.env.alb_router_id | quote }}
+            - name: DOMAIN
+              value: {{ .Values.env.domain | quote }}
           resources:
 {{ toYaml .Values.resources | indent 10 }}
           lifecycle:
