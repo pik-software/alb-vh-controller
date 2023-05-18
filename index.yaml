@@ -3,28 +3,15 @@ entries:
   alb-vh-controller:
   - apiVersion: v2
     appVersion: 0.0.5
-    created: "2023-05-17T19:48:49.004188+03:00"
+    created: "2023-05-18T20:34:31.267429+03:00"
     description: A helm chart for deploy alb-vh-controller
-    digest: ef9c154f6d66c45c22bfe3f40eb1f3c31587b5722c86de147762a40b92a5a7bb
+    digest: a83df6f490634f07f332b197c3c3ad9b472529019f0d1afcc6c4d660e94563cd
     keywords:
     - alb
     - controller
     name: alb-vh-controller
     type: application
     urls:
-    - https://pik-software.github.io/alb-vh-controller/alb-vh-controller-1.1.3.tgz
-    version: 1.1.3
-  - apiVersion: v2
-    appVersion: 0.0.5
-    created: "2023-05-17T19:48:49.003953+03:00"
-    description: A helm chart for deploy alb-vh-controller
-    digest: 4fbcd1de8ba64bd6b9d00a93e8ac7acf750cb0c65f2d460cb8b9d9522755c672
-    keywords:
-    - alb
-    - controller
-    name: alb-vh-controller
-    type: application
-    urls:
-    - https://pik-software.github.io/alb-vh-controller/alb-vh-controller-1.1.2.tgz
-    version: 1.1.2
-generated: "2023-05-17T19:48:49.003579+03:00"
+    - https://pik-software.github.io/alb-vh-controller/alb-vh-controller-1.1.4.tgz
+    version: 1.1.4
+generated: "2023-05-18T20:34:31.267033+03:00"
