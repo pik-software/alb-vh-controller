@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: {{ .Values.name | quote }}
 spec:
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 1
   selector:
     matchLabels:
@@ -40,6 +40,12 @@ spec:
                   - sleep
                   - '5'
       terminationGracePeriodSeconds: 60
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: DoNotSchedule
+          labelSelector:
+            matchLabels:
+              app: {{ .Values.name | quote }}
       imagePullSecrets:
       - name: image-pull-secret
-
