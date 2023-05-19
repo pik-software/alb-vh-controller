@@ -4,7 +4,7 @@
 name: alb-vh-controller
 image:
   repository: cr.yandex/crpm5h6tsjpdgvehbfdf/alb-controller
-  tag: "d8ef700e"
+  tag: "e3080f18"
   pull_secret: ""
 env:
   name: "test"
